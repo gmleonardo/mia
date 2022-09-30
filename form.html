@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries-form.css" />
+
+
+    <title>MIA Learning Registration Form</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFL3QSC1ZX"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-NFL3QSC1ZX');
+    </script>
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          alt="Multicultural Immersion Academy Logo"
+          src="img/mia.png"
+          width="180rem"
+        />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <div class="nav-center">
+              <ion-icon class="nav-icon" name="home-outline"></ion-icon>
+              <a class="main-nav-link" href="index.html">Home</a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-center">
+              <ion-icon class="nav-icon" name="book-outline"></ion-icon>
+              <a class="main-nav-link" href="program.html">Programs</a>
+            </div>
+          </li>
+
+          <li>
+            <div class="nav-center">
+              <ion-icon class="nav-icon" name="images-outline"></ion-icon>
+              <a class="main-nav-link" href="gallery.html">Gallery</a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-center">
+              <ion-icon class="nav-icon" name="people-outline"></ion-icon>
+              <a class="main-nav-link" href="staff.html">Staff</a>
+            </div>
+          </li>
+          <!-- <li>
+            <a class="main-nav-link nav-cta" href="form.html">Register</a>
+          </li> -->
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+
+    <main>
+      <section class="section-cta">
+        <div class="container">
+          <h2 class="heading-secondary h2-form">
+            Registration Form - MIA Learning Center
+          </h2>
+          <hr />
+          <p class="cta-text">
+            <strong>Welcome!</strong> <br />
+            We are Multicultural Immersion Academy, a Learning Center with an innovative approach to teaching 
+            and learning Spanish as a second language. We use creative pedagogical techniques 
+            and believe that the path to acquiring a second language is also the way to genuinely develop 
+            essential human skills such as critical thinking, creativity, communication, and collaboration. 
+            We offer three programs:
+          </p>
+
+          <ul class="cta-text">
+            <!--
+
+              <li>
+                Parent Mornings Out Program for children Ages 6 to 20 Months.
+              </li>
+            -->
+            <li>Out of School Hours .</li>
+            <li>Private Tutoring Class.</li>
+            <li>Seasonal Activities</li>
+            
+          </ul>
+
+          <p class="cta-text">
+            All programs support the development of motor, language and social skills.You can sign up either 
+            for a full program or select those days that are most convenient for you and your child (children).
+             To ensure your child's spot please, check the following instructions. 
+
+
+          </p>
+
+          <h3 class="heading-tertiary">INSTRUCTIONS</h3>
+
+          <a
+            class="cta-text-pdf"
+            href="Registration Form MIA.pdf"
+            download="Down Loading MIA Parent Agreement"
+          >
+            1. Download Registration Form MIA.pdf
+          </a>
+
+          <p class="cta-text-p">
+            2. Complete the following Form and Submit it
+          </p>
+          <form class="container cta-form" action="form.php">
+
+            <!--Section A Primary Parent -->
+            <div class="cta-background">
+              <h3 class="cta-h3">A. PRIMARY PARENT / GUARDIAN</h3>
+
+              <div class="label-input">
+                <label for="first-name">
+                  First Name<strong class="asterisk">*</strong></label
+                >
+                <input
+                  id="pfirst-name"
+                  name="pfirst-name"
+                  type="text"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="label-input">
+                <label for="last-name">
+                  Last Name<strong class="asterisk">*</strong></label
+                >
+                <input
+                  id="plast-name"
+                  name="plast-name"
+                  type="text"
+                  placeholder="Smith"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="address"
+                  >Address<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="paddress"
+                  name="paddress"
+                  type="text"
+                  placeholder="# Street, City, St, ZIP"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="contact-number"
+                  >Contact Number<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="pcontact-number"
+                  type="text"
+                  name="pcontact-number"
+                  placeholder="555-555555"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="pemail"
+                  >Email<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="pemail"
+                  name="pemail"
+                  type="email"
+                  placeholder="js@example1.com"
+                  required
+                />
+              </div>
+            </div>
+             <!--Section B Secondary Information -->
+            <div class="cta-background">
+              <h3 class="cta-h3">B. SECONDARY PARENT / GUARDIAN</h3>
+
+              <div class="label-input">
+                <label for="sfirst-name">
+                  First Name<strong class="asterisk">*</strong></label
+                >
+                <input
+                  id="sfirst-name"
+                  name="sfirst-name"
+                  type="text"
+                  placeholder="Paul"
+                  required
+                />
+              </div>
+              <div class="label-input">
+                <label for="slast-name">
+                  Last Name<strong class="asterisk">*</strong></label
+                >
+                <input
+                  id="slast-name"
+                  name="slast-name"
+                  type="text"
+                  placeholder="Brown"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="saddress"
+                  >Address<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="saddress"
+                  name="saddress"
+                  type="text"
+                  placeholder="# Street, City, St, ZIP"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="contact-number"
+                  >Contact Number<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="scontact-number"
+                  name="scontact-number"
+                  type="text"
+                  placeholder="666-666666"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="semail"
+                  >Email<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="semail"
+                  name="semail"
+                  type="email"
+                  placeholder="js@example2.com"
+                  required
+                />
+              </div>
+            </div>
+            <!--Section C Emergency Information -->
+            <div class="cta-background">
+              <h3 class="cta-h3">C. ADDITIONAL & EMERGENCY CONTACTS</h3>
+
+              <div class="label-input other-names">
+                <label for="others-names">
+                  Please list two people authorized to pickup the child (they
+                  should present a photo ID at pick up time)</label
+                >
+                <input
+                  id="other-names"
+                  name="other-names"
+                  type="text"
+                  placeholder="Thomas Carlson, Louis Webber, William Salvatore "
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="other-emails"> Email Addresses </label>
+                <input
+                  id="other-emails"
+                  name="other-emails"
+                  type="text"
+                  placeholder="lg@email1.com, cg@email2.com, pg@email3.com "
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="phone-numbers">Phone Numbers </label>
+                <input
+                  id="other-phone-numbers"
+                  name="other-phone-numbers"
+                  type="text"
+                  placeholder="777-777777,888-888888 "
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="contact-number"
+                  >Emergency Contact Name<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="emergency-contact-name"
+                  name="emergency-contact-name"
+                  type="text"
+                  placeholder="Laura Smith"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="phone-numbers"
+                  >Emergency Contact Phone Number<strong class="asterisk"
+                    >*</strong
+                  >
+                </label>
+                <input
+                  id="emergency-phone-number"
+                  name="emergency-phone-number"
+                  type="text"
+                  placeholder="999-999999 "
+                />
+              </div>
+            </div>
+            <!--Section D Child Information -->
+            <div class="cta-background">
+              <h3 class="cta-h3">D. CHILD INFORMATION</h3>
+
+              <div class="label-input">
+                <label for="Child First Name">
+                  Child First Name<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="child-first-name"
+                  name="child-first-name"
+                  type="text"
+                  placeholder="Simon"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="child-last-name">
+                  Child Last Name<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="child-last-name"
+                  name="child-last-name"
+                  type="text"
+                  placeholder="Smith"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="birthday"
+                  >Date of Birth<strong class="asterisk">*</strong>
+                </label>
+                <input id="birthday" name="birthday" type="date" required />
+              </div>
+
+              <div class="label-input gender">
+                <label for gender>Gender<strong class="asterisk">*</strong></label>
+                <div class="gender-grid">
+                  <input type="radio" id="gender" name="gender" value="Female" required />
+                  <label for="sex">Female</label>
+                  <input type="radio" id="gender" name="gender" value="Male" required />
+                  <label for="sex">Male</label>
+                </div>
+              </div>
+
+              <div class="label-input">
+                <label for="list-allergies"
+                  >List Allergies<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="list-allergies"
+                  name="list-allergies"
+                  type="text"
+                  placeholde="Long Answer Text"
+                  required
+                />
+              </div>
+
+              <div class="label-input">
+                <label for="medications"
+                  >Medication<strong class="asterisk">*</strong>
+                </label>
+                <input
+                  id="medications"
+                  name="medications"
+                  type="text"
+                  placeholde="Long Answer Text"
+                  required
+                />
+              </div>
+
+              <div class="label-input other-names">
+                <label for="insurance">
+                  Child's insurance carrier and number ** All students are
+                  required to have insurance</label
+                >
+                <input
+                  id="insurance"
+                  name="insurance"
+                  type="text"
+                  placeholder="Long Answer Text "
+                  required
+                />
+              </div>
+            </div>
+
+            <!--Section E Programs Information -->
+            <div class="cta-background">
+              <h3 class="cta-h3">E. PROGRAMS INFORMATION</h3>
+              <div class=" other-names">
+                <p class="checkbox-text">
+                  Select the program(s) you are applying for<strong class="asterisk">*</strong>
+                </p>
+              </div>
+                <div class="checkbox-program" >
+                  <ul >
+                    <!--
+
+                      <li>
+                        <input           
+                        type="checkbox"
+                        id="mpo"
+                        name="mpo"
+                        value="Morning Parent Out"
+                        
+                        />
+                        <label for="mpo"> Morning Parent Out (MPO) </label>
+                      </li>
+                    -->
+                    
+                    <li>
+                      <input
+                      
+                      type="checkbox"
+                      id="oosh"
+                      name="oosh"
+                      value="Out of School Hours"
+                      />
+                      <label for="oosh"> Out of School Hours (OOSH) </label>
+                    </li>
+                    
+                    <li>
+                      <input
+                     
+                      type="checkbox"
+                      id="ptc"
+                      name="ptc"
+                      value="Private Tutoring"
+                      />
+                      <label for="ptc"> Private Tutoring Class (PTC) </label>
+                    </li>
+                  <!--
+
+                    <li>
+                      <input
+                      
+                      type="checkbox"
+                      id="hsp"
+                      name="hsp"
+                      value="Homeschooling Program"
+                      />
+                      <label for="hscp">Homeschooling Program (HSC) </label>
+                    </li>
+                  -->
+                    
+                    <li>
+                      <input          
+                      type="checkbox"
+                      id="sap"
+                      name="sap"
+                      value="Seasonal Activity (Camps,PNO)"
+                      />
+                      <label for="sap"> Seasonal Activity (Camps,PNO)</label>
+                    </li>
+                 <!--
+
+                   <li>
+                     <input
+                     type="checkbox"
+                     id="other-program"
+                     name="other-program"
+                     value="Other"
+                     />
+                     <label for="other-program"> Other</label>
+                    </li>
+                  -->   
+                  </ul>  
+                </div>
+               <!--
+
+                 <div class="label-input other-names" >
+                   <label for="other-program-details">Detail Information about your required program 
+                  </label>
+                  <input type="text" id="other-program-details " name="other-program-details" placeholder="Please, be specific about days and time"/>
+                </div>
+              -->
+                  
+            </div>
+            <!--Section F Permission to Use Photograph-->
+            <div class="cta-background">
+              <h3 class="cta-h3">F. PERMISSION TO USE PHOTOGRAPH
+              </h3>
+              <div class=" label-input other-names">
+                <p class="other-names">
+                  I agree that MIA may use such photographs of my child for any lawful
+                  purpose, including for example such purposes as publicity, illustration, 
+                  advertising, and website content<strong class="asterisk">*</strong> 
+                </p>
+                <div class="checkbox-aggreement">
+  
+                   
+                    <div class="aggreement-grid">
+                      <input type="radio" id="agree" name="agree" value="Yes, I agree" required />
+                      <label for="yes-agree">I grant MIA, the right to take photographs of my child</label>
+                      <input type="radio" id="agree" name="agree" value="No, I do not agree" required />
+                      <label for="no-agree">I do not grant MIA, the right to take photographs of my child</label>
+                    </div>
+                
+                  
+
+                </div>
+              </div>
+              <div class="label-input other-names">
+                <label for="signup">Sign Up<strong class="asterisk">*</strong></label>
+                <input type="text" id="signup" name="signup" placeholder="First and Last Name" required />
+
+              </div>
+            </div>
+            <button  name="sendflag" class="btn btn--form" type="submit" value="SUBMIT">SUBMIT</button>
+          </form>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class=" grid grid--footer">
+        <div class="logo-col">
+          <!--
+            
+            <a href="index.html" class="footer-logo">
+              <img
+              class="logo-footer"
+              alt="Multicultural Immersion Academy"
+              src="img/mia.png"
+              />
+            </a>
+          -->
+          <p class="footer-heading">Social Media</p>
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/mia_learning_center/"
+                target="_blank"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://m.facebook.com/MulticulturalImmersionAcademy"
+                target="_blank"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+
+            <li>
+              <a
+                class="footer-link"
+                href="https://wa.me/1786820022?text=Welcome%20to%20MIA!%20How%20Can%20we%20help%20you?"
+                target="_blank"
+                ><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="logo-col">
+          <p class="footer-heading">Contact us</p>
+
+          <address class="contacts">
+            <div class="flex-add">
+              <a
+                href="https://www.google.com/maps/place/1444+Remount+Rd,+North+Charleston,+SC+29406/@32.9021167,-79.9998931,21z/data=!4m5!3m4!1s0x88fe6487862631ef:0x270ba91b275bc270!8m2!3d32.902185!4d-79.999701"
+                target="_blank"
+                class="footer-link"
+              >
+                <ion-icon
+                  class="social-icon"
+                  name="location-outline"
+                ></ion-icon>
+              </a>
+              <p class="address">
+                1444 Remount Rd,<br />
+                North Charleston, SC. 29405
+              </p>
+            </div>
+
+            <div class="flex-add">
+              <ion-icon
+                class="footer-link social-icon icon-color"
+                name="call-outline"
+              ></ion-icon>
+
+              <a class="footer-link call-email" href="tel:843-896-0606"
+                >(843) 896-0606</a
+              ><br />
+            </div>
+            <br />
+            <div class="flex-add">
+              <ion-icon
+                class="footer-link social-icon icon-color"
+                name="mail-outline"
+              ></ion-icon>
+              <a
+                class="call-email"
+                href="mailto:forms@mialearningcenter.us"
+                >forms@mialearningcenter.us</a
+              >
+            </div>
+          </address>
+        </div>
+        <div class="logo-col">
+          <p class="footer-heading">Links</p>
+          <ul class="li-footer2">
+            <li>
+              <a class="footer-link2" href="program.html">Our Three Programs</a>
+            </li>
+            <li>
+              <a
+                class="footer-link2"
+                href="Registration Form MIA.pdf"
+                download="Down Loading MIA Parent Agreement"
+                >Download MIA Parent Agreement
+              </a>
+            </li>
+            <li><a class="footer-link2" href="form.html"> MIA Registration Form</a></li>
+            <li>
+              <a
+                class="footer-link2"
+                href="https://www.instagram.com/imagirodanza/"
+                >Alliance </a
+              >
+            </li>
+
+            <li>
+              <a
+                class="footer-link2"
+                href="https://www.instagram.com/imagirodanza/"
+                >Alliance </a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright &copy; 2022 by Multicultural Immersion Academy. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="js/script4.js"></script>
+  </body>
+</html>
